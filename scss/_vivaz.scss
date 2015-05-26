@@ -1,0 +1,177 @@
+@mixin cssCalc($property, $expression) {
+  #{$property}: calc(#{$expression});
+}
+
+$input-border-color: #333;
+$input-border-style:solid;
+$walkthrough-btn-bg-2: #ffc10d;
+$walkthrough-btn-color-2: #FFFFFF;
+
+
+.register-view, .login-view, .forgot-password-view{
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;  
+
+}
+
+.register-view .input-fields .item, .login-view .input-fields .item, .forgot-password-view .input-fields .item{
+    border-width:1px !important;
+    margin:0 !important;
+    background-color: transparent !important;
+    border-top:0 !important;
+    border-right:0 !important;
+    border-left:0 !important;
+    border-bottom: $input-border-color;
+    border-style: $input-border-style;
+  }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/SourceSansPro-Italic.ttf");
+  font-style:italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/SourceSansPro-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/SourceSansPro-LightItalic.ttf");
+  font-weight: 300;
+  font-style:italic;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/SourceSansPro-Bold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../font/SourceSansPro-BoldItalic.ttf");
+  font-weight: 600;
+  font-style:italic;
+}
+.home-view ion-content, .category-view ion-content{
+  font-family:'Source Sans Pro', san-serif !important;
+}
+.home-view .card-footer, .category-view .card-footer {
+    margin-top: 0 !important;
+    padding: 16px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family:'Source Sans Pro', san-serif !important;
+}
+.home-view .card-header, .category-view .card-header {
+    padding: 1px 16px 0px !important;
+}
+.home-view .post-card, .category-view .post-card{
+  margin:0px 0 8px !important;
+  background:#222 !important;
+}
+a.event{
+  text-decoration:none;
+}
+.event{
+    
+
+    .featured-img
+    {
+      margin-left: calc(-16px - 8px);
+      width: calc(100% + 32px + 16px);
+      padding:0 9px;
+      margin-bottom:-4px;
+    }
+    .event-info
+    {
+      bottom: 0;
+      padding: 0 0 65px;
+      position: absolute;
+      width: 96%;
+
+    }
+      
+    h1
+    {
+        color:#fff;
+        text-decoration:none;
+        margin:0 0 5px;
+        width:95%;
+        font-size:16px !important;
+        border-bottom: 1px solid #333;
+        padding-bottom:2px;
+        text-transform:uppercase;
+
+    }
+    .left
+    {
+      width:74px;
+      float:left;
+    }
+    .right
+    {
+      width:75%;
+      float:right;
+    }
+    .weekday
+    {
+      font-size:13px;
+      color:#fff;
+      text-align:center;
+    }
+    .date
+    {
+      background-color:rgba(0,0,0, .5);
+      border-color:$input-border-color;
+      border-style: $input-border-style;
+      border-width:1px;
+      margin: 0 6px;
+      padding:2px 10px;
+    }
+    .month
+    {
+      display:flex;
+      font-size:17px;
+      color:$walkthrough-btn-bg-2;
+      text-transform:uppercase;
+      padding:0 5px 3px;
+    }
+    .day{
+      display:flex;
+      font-size:40px;
+      color:#fff;
+      padding:0 0px 10px;
+
+    }
+    .time, .location{
+      display:flex;
+      font-size:14px;
+      color:#999;
+      padding:0 4px 3px;
+
+    }
+
+}
+
+.ion-ios-time
+{
+  padding-right:6px;
+  font-size:16px;  
+
+}
+.ion-location   
+{
+  padding-right:10px;
+  font-size:20px;  
+
+}  
+

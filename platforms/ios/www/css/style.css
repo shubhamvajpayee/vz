@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.register-view, .login-view, .forgot-password-view {
+  	background-image: url("../img/app-bg.jpg");
+	background-repeat: no-repeat;
+	background-color: red !important;
+}
+.register-view .input-fields .item, .login-view .input-fields .item, .forgot-password-view .input-fields .item {
+    background-color: transparent;
+    border-width: 1px !important;
+    margin: 0px 0;
+}

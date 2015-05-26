@@ -1,0 +1,27 @@
+<div class="card-header event">
+  <a class="event" ui-sref="app.post({postId :post.id})"><img class="featured-img" ng-src="{{post.thumbnail}}">
+    <div class="event-info">
+      <div class="left">
+        <div class="weekday">Friday</div>
+        <div class="date"><div class="month">May</div><div class="day">25</div></div>
+      </div>
+      <div class="right">
+        <h1 ng-bind-html="post.title | rawHtml"></h1>
+        <div class="time"><i class="icon ion-ios-time"></i> 7:30pm</div><div class="location"><i class="icon ion-location"></i> Viva Z Studios</div>
+      </div>
+    </div>
+  </a>
+  <!-- <h1 ng-bind-html="post.title | rawHtml"></h1>
+  <h2>Posted <span am-time-ago="post.date"></span> by <span class="author" ng-bind-html="post.author.name | rawHtml"></span></h2> -->
+</div>
+<!-- <div class="card-content" ng-bind-html="post.content | rawHtml"></div> -->
+<div class="card-footer">
+  <a class="card-button secondary" ng-click="sharePost(post.url)"><i class="icon ion-forward"></i></a>
+  <!-- <a class="card-button primary" ui-sref="app.post({postId :post.id})"><i class="icon ion-arrow-expand"></i> --></a>
+  <a ng-show="post.comment_count > 0" class="card-button comments" ui-sref="app.post({postId :post.id})">
+    <i class="icon ion-chatbox"></i>{{post.comment_count}}
+  </a>
+  <a class="card-button secondary bookmark" ng-click="bookmarkPost(post)">
+    <i class="icon ion-bookmark"></i>
+  </a>
+</div>
